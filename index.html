@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pre Loader Project - 7 </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+
+        }
+
+        .container {
+            display: flex;
+            position: relative;
+            width: 70px;
+            height: 70px;
+        }
+
+        .container span {
+            position: absolute;
+            background-color: white;
+            width: 10px;
+            bottom: 0;
+
+        }
+
+        span:nth-child(1) {
+            height: 10px;
+            left: 0;
+            animation: bar1 8s linear infinite;
+
+        }
+
+        @keyframes bar1 {
+
+            0%,
+            50% {
+                height: 10px;
+            }
+
+            50.1%,
+            100% {
+                height: 60px;
+            }
+        }
+
+        span:nth-child(2) {
+            height: 20px;
+            left: 12px;
+            animation: bar2 8s linear infinite;
+
+        }
+
+        @keyframes bar2 {
+
+            0%,
+            50% {
+                height: 20px;
+            }
+
+            50.1%,
+            100% {
+                height: 50px;
+            }
+        }
+
+        span:nth-child(3) {
+            height: 30px;
+            left: 24px;
+            animation: bar3 8s linear infinite;
+        }
+
+        @keyframes bar3 {
+
+            0%,
+            50% {
+                height: 30px;
+            }
+
+            50.1%,
+            100% {
+                height: 40px;
+            }
+        }
+
+        span:nth-child(4) {
+            height: 40px;
+            left: 36px;
+            animation: bar4 8s linear infinite;
+
+        }
+
+        @keyframes bar4 {
+
+            0%,
+            50% {
+                height: 40px;
+            }
+
+            50.1%,
+            100% {
+                height: 30px;
+            }
+        }
+
+        span:nth-child(5) {
+            height: 50px;
+            left: 48px;
+            animation: bar5 8s linear infinite;
+
+        }
+
+        @keyframes bar5 {
+
+            0%,
+            50% {
+                height: 50px;
+            }
+
+            50.1%,
+            100% {
+                height: 20px;
+            }
+        }
+
+        span:nth-child(6) {
+            height: 60px;
+            left: 60px;
+            animation: bar6 8s linear infinite;
+
+        }
+
+        @keyframes bar6 {
+
+            0%,
+            50% {
+                height: 60px;
+            }
+
+            50.1%,
+            100% {
+                height: 10px;
+            }
+        }
+
+        span:nth-child(7) {
+            height: 10px;
+            left: 0;
+            bottom: 10px;
+         
+            animation: move 8s linear infinite;
+
+        }
+
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            5% {
+                transform: translate(6px, -15px);
+            }
+
+            10% {
+                transform: translate(12px, -10px);
+            }
+
+            15% {
+                transform: translate(18px, -25px);
+            }
+
+            20% {
+                transform: translate(24px, -20px);
+            }
+
+            25% {
+                transform: translate(30px, -35px);
+            }
+
+            30% {
+                transform: translate(36px, -30px);
+            }
+
+            35% {
+                transform: translate(42px, -45px);
+            }
+
+            40% {
+                transform: translate(48px, -40px);
+            }
+
+            45% {
+                transform: translate(54px, -55px);
+            }
+
+            48% {
+                transform: translate(60px, -50px);
+            }
+
+            50% {
+                transform: translate(60px, 0px);
+            }
+            55%{transform: translate(54PX, -15px)}
+
+            60% {
+                transform: translate(48px, -10px);
+            }
+            65%{transform: translate(42px, -25px)}
+
+            70% {
+                transform: translate(36px, -20px);
+            }
+            75%{transform: translate(30px, -35px)}
+
+            80% {
+                transform: translate(24px, -30px);
+            }
+            85%{transform: translate(18px, -45px)}
+
+            90% {
+                transform: translate(12px, -40px);
+            }
+            95%{transform: translate(0, -55px)}
+
+            98% {
+                transform: translate(0, -50px);
+            }
+
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</body>
+
+</html>
